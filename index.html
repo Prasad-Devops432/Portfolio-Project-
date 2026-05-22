@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kothapalli Lakshmi Prasad — IT Support &amp; Cloud Engineer</title>
+  <meta name="description" content="Portfolio of Kothapalli Lakshmi Prasad — IT Support & Cloud Engineer based in Auckland. Cybersecurity student with hands-on AWS, Azure, Active Directory and CI/CD project experience." />
+  <meta name="author" content="Kothapalli Lakshmi Prasad" />
+  <link rel="canonical" href="/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Kothapalli Lakshmi Prasad — IT Support & Cloud Engineer" />
+  <meta property="og:description" content="Portfolio with hands-on AWS, Azure, Active Directory and CI/CD project experience." />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Three.js (for 3D birds, horse, tortoise) -->
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.160.0/build/three.module.js"
+      }
+    }
+  </script>
+
+  <!-- JSON-LD Person schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Kothapalli Lakshmi Prasad",
+    "jobTitle": "IT Support & Cloud Engineer",
+    "email": "mailto:klprasad6@gmail.com",
+    "telephone": "+64278008180",
+    "address": { "@type": "PostalAddress", "addressLocality": "Auckland", "addressCountry": "NZ" },
+    "sameAs": [
+      "https://www.linkedin.com/in/kothapalli-lakshmiprasad",
+      "https://github.com/kothapalli-lp"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <!-- ============ NAV ============ -->
+  <header id="header">
+    <nav class="container nav">
+      <a href="#top" class="brand">KLP<span>.</span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn btn-primary nav-cta">Hire me</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section id="top" class="hero">
+      <div class="hero-sky"></div>
+      <canvas id="birds-canvas" class="scene-canvas" aria-hidden="true"></canvas>
+
+      <!-- Distant mountains -->
+      <svg class="mountains" viewBox="0 0 1440 320" preserveAspectRatio="none" aria-hidden="true">
+        <path fill="hsl(145 35% 45%)" opacity="0.55"
+              d="M0,256 L160,180 L320,220 L480,140 L640,200 L800,150 L960,210 L1120,160 L1280,220 L1440,180 L1440,320 L0,320 Z"/>
+        <path fill="hsl(145 50% 32%)" opacity="0.85"
+              d="M0,288 L120,220 L260,260 L400,200 L540,250 L700,210 L860,260 L1000,220 L1160,260 L1300,210 L1440,250 L1440,320 L0,320 Z"/>
+      </svg>
+
+      <div class="treeline" aria-hidden="true"></div>
+
+      <div class="container hero-content">
+        <span class="badge"><span class="dot"></span> Available for opportunities</span>
+        <h1>Kothapalli<br/><span class="text-gradient">Lakshmi Prasad</span></h1>
+        <p class="title">IT Support &amp; Cloud Engineer</p>
+        <p class="lead">
+          Reality not always the truth — click anywhere to begin. IT graduate building reliable cloud
+          and security systems, with a love for nature, calm focus, and well-crafted infrastructure.
+        </p>
+        <p class="location"><i class="fa-solid fa-location-dot"></i> Auckland, New Zealand</p>
+        <div class="hero-cta">
+          <a href="Kothapalli_Lakshmi_Prasad_CV.pdf" download class="btn btn-primary">
+            <i class="fa-solid fa-download"></i> Download CV
+          </a>
+          <a href="#contact" class="btn btn-ghost">Contact me <i class="fa-solid fa-arrow-down"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section reveal">
+      <div class="container grid-12">
+        <div class="col-4">
+          <p class="eyebrow">About</p>
+          <h2>Curious by nature, <span class="text-gradient">reliable by habit.</span></h2>
+        </div>
+        <div class="col-8 about-body">
+          <p>
+            I'm a motivated IT graduate currently completing a <strong>Graduate Diploma in Cybersecurity
+            and Cloud Management</strong> at Yoobee College, with practical experience across AWS, Azure,
+            Active Directory, Microsoft 365 and CI/CD pipelines.
+          </p>
+          <p>
+            I enjoy supporting users, deploying resilient infrastructure, and automating repetitive tasks.
+            I learn fast, communicate clearly, and I'm eager to grow into a specialist cybersecurity
+            or cloud engineering role.
+          </p>
+          <div class="stats">
+            <div class="stat"><div class="num">5+</div><div class="lbl">Hands-on projects</div></div>
+            <div class="stat"><div class="num">AWS · Azure</div><div class="lbl">Cloud platforms</div></div>
+            <div class="stat"><div class="num">2026</div><div class="lbl">Grad Diploma</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="section section-alt reveal">
+      <div class="container">
+        <div class="skills-head">
+          <div>
+            <p class="eyebrow">Skills</p>
+            <h2>A versatile toolkit.</h2>
+            <p class="muted">Slow and steady — like the tortoise. Built layer by layer through projects, certifications and curiosity.</p>
+          </div>
+          <div class="scene-frame">
+            <canvas id="tortoise-canvas" class="scene-canvas"></canvas>
+          </div>
+        </div>
+        <div class="skills-grid" id="skills-grid"></div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section id="experience" class="section reveal">
+      <div class="container">
+        <p class="eyebrow">Experience</p>
+        <h2>Where I've delivered.</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="dot-marker"></div>
+            <div class="card">
+              <div class="card-head">
+                <div>
+                  <h3>Operations &amp; Team Support</h3>
+                  <p class="org">KPMG New Zealand</p>
+                </div>
+                <span class="pill">2019</span>
+              </div>
+              <ul class="bullets">
+                <li>Coordinated daily operational workflows across teams in a fast-paced professional services environment.</li>
+                <li>Onboarded and trained new team members with clear step-by-step documentation.</li>
+                <li>Acted as a reliable point of contact for internal queries — strong communication under pressure.</li>
+                <li>Built an appreciation for process consistency — directly transferable to security operations and incident response.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="section section-alt reveal">
+      <div class="container">
+        <div class="projects-head">
+          <div>
+            <p class="eyebrow">Projects</p>
+            <h2>Selected hands-on work.</h2>
+          </div>
+          <p class="muted">Lab-built projects covering cloud, identity, automation and security fundamentals.</p>
+        </div>
+        <div class="scene-frame scene-wide">
+          <canvas id="horse-canvas" class="scene-canvas"></canvas>
+        </div>
+        <div class="projects-grid" id="projects-grid"></div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section id="education" class="section reveal">
+      <div class="container grid-2">
+        <div>
+          <p class="eyebrow">Education</p>
+          <h2>Academic foundation.</h2>
+          <div class="cards" id="education-list"></div>
+        </div>
+        <div>
+          <p class="eyebrow">Certifications</p>
+          <h2>Continuous learning.</h2>
+          <div class="cards" id="certs-list"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section section-alt reveal">
+      <div class="container grid-2">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Let's talk.</h2>
+          <p class="muted">Open to Helpdesk, IT Support, Junior Cloud or Cybersecurity roles in Auckland. Reach out — I respond fast.</p>
+          <ul class="contact-list">
+            <li><a href="mailto:klprasad6@gmail.com"><span class="ico"><i class="fa-solid fa-envelope"></i></span> klprasad6@gmail.com</a></li>
+            <li><a href="tel:+64278008180"><span class="ico"><i class="fa-solid fa-phone"></i></span> 027 800 8180</a></li>
+            <li><span class="ico"><i class="fa-solid fa-location-dot"></i></span> Auckland, New Zealand</li>
+          </ul>
+          <div class="socials">
+            <a href="https://www.linkedin.com/in/kothapalli-lakshmiprasad" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/kothapalli-lp" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+        <form id="contact-form" class="contact-form" novalidate>
+          <label>Name<input name="name" required /></label>
+          <label>Email<input type="email" name="email" required /></label>
+          <label>Message<textarea name="message" rows="5" required></textarea></label>
+          <button type="submit" class="btn btn-primary">Send message <i class="fa-solid fa-paper-plane"></i></button>
+          <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-row">
+      <p>© <span id="year"></span> Kothapalli Lakshmi Prasad. All rights reserved.</p>
+      <p>Built with care in Auckland.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
