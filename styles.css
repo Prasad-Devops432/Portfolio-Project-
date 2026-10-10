@@ -155,6 +155,22 @@ h3 { font-size: 1.25rem; font-weight: 600; }
 .hero .location { color: hsl(145 35% 18%); font-size: .875rem; font-weight: 500; margin-bottom: 2rem; }
 .hero .location i { color: var(--primary); margin-right: .25rem; }
 .hero-cta { display: flex; flex-wrap: wrap; gap: .75rem; }
+.hero-links { display: flex; flex-wrap: wrap; gap: 1.25rem; margin-top: 1.5rem; font-size: .9375rem; font-weight: 500; }
+.hero-links a {
+  display: inline-flex; align-items: center; gap: .5rem;
+  padding: .4rem .9rem; border-radius: 999px;
+  background: hsl(0 0% 100% / .75); border: 1px solid var(--border);
+  color: var(--fg); backdrop-filter: blur(6px); transition: var(--transition);
+}
+.hero-links a:hover { background: var(--card); border-color: var(--primary); }
+.hero-sky::after {
+  content: ""; position: absolute; inset: 0;
+  background: radial-gradient(60% 50% at 80% 20%, hsl(60 90% 95% / .55), transparent 70%);
+}
+.eyebrow::before {
+  content: ""; display: inline-block; width: 1.5rem; height: 2px;
+  background: var(--primary); vertical-align: middle; margin-right: .6rem;
+}
 
 /* ===================== ABOUT ===================== */
 .grid-12 { display: grid; gap: 3rem; grid-template-columns: 1fr; }
@@ -184,6 +200,11 @@ h3 { font-size: 1.25rem; font-weight: 600; }
   padding: 1.5rem; border-radius: var(--radius);
   background: var(--card); border: 1px solid var(--border); box-shadow: var(--shadow-soft);
   transition: var(--transition);
+}
+.skill-card { position: relative; overflow: hidden; }
+.skill-card::before {
+  content: ""; position: absolute; left: 0; right: 0; top: 0; height: 3px;
+  background: var(--gradient-text);
 }
 .skill-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-card); border-color: hsl(145 40% 70%); }
 .skill-icon {
@@ -223,6 +244,11 @@ h3 { font-size: 1.25rem; font-weight: 600; }
   padding: 1.75rem; border-radius: var(--radius);
   background: var(--card); border: 1px solid var(--border); box-shadow: var(--shadow-soft);
   transition: var(--transition);
+}
+.project { position: relative; overflow: hidden; }
+.project::before {
+  content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 3px;
+  background: var(--gradient-text);
 }
 .project:hover { transform: translateY(-4px); box-shadow: var(--shadow-card); border-color: hsl(145 40% 70%); }
 .project h3 { line-height: 1.25; }
