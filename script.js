@@ -98,8 +98,8 @@ $("#certs-list").innerHTML = CERTS.map(c => `
   <div class="cert-card">
     <span class="cert-icon"><i class="fa-solid fa-award"></i></span>
     <div>
-      <p style="font-weight:500">${c.title}</p>
-      <p class="muted" style="font-size:.875rem">${c.note}</p>
+      <p class="cert-title">${c.title}</p>
+      <p class="cert-note">${c.note}</p>
     </div>
   </div>
 `).join("");
